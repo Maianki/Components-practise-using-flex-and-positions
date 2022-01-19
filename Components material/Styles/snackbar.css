@@ -1,0 +1,36 @@
+.toast{
+    min-height:40px;
+    width: 65%;
+    background:black;
+    color:#EEEADE;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    padding:0.5rem 2.5rem;
+  }
+    
+  .btn-retry{
+    text-transform: uppercase;
+    color:blue;
+    margin-left:auto;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn-demo{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: .8;
+    margin: 2rem auto;
+  }
+  
+  .btn-demo:hover{
+        opacity: 1;
+        box-shadow: 1px 1px var(--white);
+  }
+  

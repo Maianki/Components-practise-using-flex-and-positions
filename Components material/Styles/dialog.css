@@ -1,0 +1,63 @@
+
+.dialog-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dialog-container{
+    border-radius: 5px;
+    padding: 1rem;
+    width: 255px;
+    background-color: var(--white);
+    box-shadow: .5px .5px 1px 1px black;
+}
+
+.dialog-btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancel-btn{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: .8;
+}
+
+.accept-btn{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: .8;
+}
+
+.accept-btn:hover,
+.cancel-btn:hover{
+    opacity: 1;
+        box-shadow: 1px 1px var(--white);
+}
+
+.btn-dialog-demo{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: .8;
+    margin-top: 2rem;
+    width: 100px;
+  }
+  
+.btn-dialog-demo:hover{
+        opacity: 1;
+        box-shadow: 1px 1px var(--white);
+}

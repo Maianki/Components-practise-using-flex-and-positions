@@ -1,0 +1,112 @@
+:root{
+    --primary-color:rgb(168, 90, 231);
+    --white:#fff;
+    --secondary-color:#e9c46a;
+    --shade-of-blue:#264653;
+    --misc:#e76f51;
+}
+
+/*UTILITIES*/
+
+
+.pd{
+    padding: .5rem 1rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.gen-badge{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 500;
+    background-color:var(--primary-color);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    color:var(--white);
+}
+
+.icon-badge{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    background-color:var(--shade-of-blue);
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    color:var(--white);
+}
+.btn-badge{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 500;
+    background-color:var(--primary-color);
+    position: absolute;
+    left: -12px;
+    top: -15px;
+    color:var(--white);
+}
+
+.large-badge{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    background-color:var(--primary-color);
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    color:var(--white);
+}
+
+
+/*GENERAL*/
+
+.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.text-1{
+    width: max-content;
+    position: relative;
+}
+
+.text-2{
+    width: max-content;
+    position: relative;
+}
+
+.btn{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+}
+
+.para-icon{
+    position: relative;
+    width:9.5rem;
+}
+
