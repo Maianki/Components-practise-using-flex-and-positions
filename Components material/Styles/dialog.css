@@ -1,8 +1,38 @@
+:root{
+    --primary-color:rgb(168, 90, 231);
+    --white:#fff;
+    --secondary-color:#e9c46a;
+    --shade-of-blue:#264653;
+    --misc:#e76f51;
+    --black:#000;
+    --grey:#eee;
+    --text-color:rgba(0, 0, 0, 0.54);
+}
 
-.dialog-box{
+.header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index : 1;
+}
+
+h1.header:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 70%;  /* or 100px */
+    border-bottom:thin solid var(--black);
+}
+
+.main{
+    padding: 3rem;
+    border:1px solid var(--black);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-color: var(--grey);
+    align-items: center;
 }
 
 .dialog-container{
@@ -19,7 +49,8 @@
     gap: 1rem;
 }
 
-.cancel-btn{
+.cancel-btn,
+.cancel-btn-demo{
     border:none;
     padding: .5rem 1rem;
     font-size: 20px;
@@ -40,7 +71,8 @@
 }
 
 .accept-btn:hover,
-.cancel-btn:hover{
+.cancel-btn:hover,
+.cancel-btn-demo:hover{
     opacity: 1;
         box-shadow: 1px 1px var(--white);
 }
@@ -59,5 +91,26 @@
   
 .btn-dialog-demo:hover{
         opacity: 1;
-        box-shadow: 1px 1px var(--white);
+        box-shadow: 1px 1px 4px 4px var(--white);
+}
+
+.dialog-demo{
+    display: none;
+    position: fixed;
+    z-index: 11;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.body-overlay{
+  display: none;
+  opacity:    0.5; 
+  background: #000; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
 }
