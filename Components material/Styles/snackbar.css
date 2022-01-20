@@ -1,23 +1,69 @@
+:root{
+  --primary-color:rgb(168, 90, 231);
+  --white:#fff;
+  --secondary-color:#e9c46a;
+  --shade-of-blue:#264653;
+  --misc:#e76f51;
+  --black:#000;
+  --grey:#eee;
+  --text-color:rgba(0, 0, 0, 0.54);
+  --blue:rgb(0, 0, 255);
+}
+
+.header{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index : 1;
+}
+
+h1.header:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 70%;  /* or 100px */
+  border-bottom:thin solid var(--black);
+}
+
+.main{
+  padding: 3rem;
+  border:1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  align-items: center;
+}
+
+
 .toast{
-    min-height:40px;
-    width: 65%;
+    width: 65vw;
     background:black;
     color:#EEEADE;
     border-radius:5px;
     display: flex;
-    align-items: center;
     padding:0.5rem 2.5rem;
+    justify-content: space-between;
   }
     
+  
   .btn-retry{
     text-transform: uppercase;
-    color:blue;
-    margin-left:auto;
+    color:var(--blue);
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
-  .btn-demo{
+  .fa{
+    padding: 0 1rem;
+  }
+ .fa:hover{
+   color:var(--white);
+ }
+  .btn-demo-leading,
+  .btn-demo-baseline{
     border:none;
     padding: .5rem 1rem;
     font-size: 20px;
@@ -26,11 +72,38 @@
     background-color:var(--shade-of-blue);
     color:var(--white);
     opacity: .8;
-    margin: 2rem auto;
+    margin: 2rem;
+  }
+  .btn-demo-baseline{
+    margin: 0;
   }
   
-  .btn-demo:hover{
-        opacity: 1;
-        box-shadow: 1px 1px var(--white);
+  .btn-demo-leading:hover,
+  .btn-demo-baseline:hover{
+    opacity: 1;
+    box-shadow: 1px 1px var(--white);
+  }
+  
+  .demo-toast{
+    width: 50vw;
+    background:black;
+    color:#EEEADE;
+    position: fixed;
+    display: flex;
+    border-radius:5px;
+    padding:0.5rem 2.5rem;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+
+  }
+
+  .demo-retry{
+    margin-left: auto;
+  }
+
+  .baseline-snackbar{
+    left: 50%;
+    transform: translate(-50%, 0px);
   }
   

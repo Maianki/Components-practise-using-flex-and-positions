@@ -4,7 +4,37 @@
     --secondary-color:#e9c46a;
     --shade-of-blue:#264653;
     --misc:#e76f51;
+    --black:#000;
+    --grey:#eee;
+    --text-color:rgba(0, 0, 0, 0.54);
 }
+
+.header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index : 1;
+}
+
+h1.header:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 70%;  /* or 100px */
+    border-bottom:thin solid var(--black);
+}
+
+.main{
+    padding: 3rem;
+    border:1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    align-items: center;
+}
+
 
 /*UTILITIES*/
 
