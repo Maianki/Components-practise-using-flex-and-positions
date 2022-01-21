@@ -1,0 +1,81 @@
+:root{
+    --primary-color:rgb(168, 90, 231);
+    --white:#fff;
+    --secondary-color:#e9c46a;
+    --shade-of-blue:#264653;
+    --misc:#e76f51;
+    --black:#000;
+    --grey:#eee;
+    --text-color:rgba(0, 0, 0, 0.54);
+}
+
+.header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index : 1;
+}
+
+h1.header:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:thin solid var(--black);
+  }
+.main{
+    padding: 3rem;
+    border:1px solid var(--black);
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.input-box{
+    width: 80%;
+    height: 2.5rem;
+    border: transparent;
+    background-color:var(--grey) ;
+    border-bottom: thin solid var(--black);
+    border-radius: .2rem;
+    padding: .5rem 1.5rem;
+}
+
+::placeholder {
+    font-size: 18px;
+  }
+
+  /* Making chip*/
+
+  .chip{
+      box-sizing: border-box;
+      width: fit-content;
+      padding: .1rem 1rem;
+      border-radius: 50px;
+      background-color: var(--shade-of-blue);
+      color: var(--grey);
+      opacity: .8;
+      display: inline-block;
+  }
+
+  .close-btn{
+     padding:.5rem;
+     border-radius:50% ;
+     opacity: .8;
+  }
+
+  .close-btn:hover,
+  .chip:hover{
+    opacity: 1;
+ }
+
+ .input-chips-display{
+    width: 70%;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+ }
