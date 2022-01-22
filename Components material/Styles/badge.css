@@ -1,19 +1,15 @@
 :root{
     --primary-color:rgb(168, 90, 231);
     --white:#fff;
-    --secondary-color:#e9c46a;
     --shade-of-blue:#264653;
-    --misc:#e76f51;
     --black:#000;
     --grey:#eee;
-    --text-color:rgba(0, 0, 0, 0.54);
 }
 
 .header{
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    z-index : 1;
 }
 
 h1.header:before {
@@ -27,17 +23,18 @@ h1.header:before {
 }
 
 .main{
+    margin:3rem 3rem 0 3rem;
     padding: 3rem;
     border:1px solid var(--black);
     display: flex;
     flex-direction: column;
     background-color: var(--grey);
     align-items: center;
+    font-weight: 700;
 }
 
 
 /*UTILITIES*/
-
 
 .pd{
     padding: .5rem 1rem;
@@ -51,7 +48,6 @@ h1.header:before {
 }
 
 .gen-badge{
-    display: inline-block;
     width:25px;
     height:25px;
     border-radius: 50%;
@@ -62,47 +58,10 @@ h1.header:before {
     right: -5px;
     top: -5px;
     color:var(--white);
-}
-
-.icon-badge{
-    display: inline-block;
-    width:25px;
-    height:25px;
-    border-radius: 50%;
-    text-align: center;
-    background-color:var(--shade-of-blue);
-    position: absolute;
-    right: 10px;
-    top: -5px;
-    color:var(--white);
-}
-.btn-badge{
-    display: inline-block;
-    width:25px;
-    height:25px;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: 500;
-    background-color:var(--primary-color);
-    position: absolute;
-    left: -12px;
-    top: -15px;
-    color:var(--white);
-}
-
-.large-badge{
-    display: inline-block;
-    width:30px;
-    height:30px;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 24px;
-    background-color:var(--primary-color);
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    color:var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
 }
 
 
@@ -114,13 +73,26 @@ h1.header:before {
     align-items: flex-start;
 }
 
-
-.text-1{
-    width: max-content;
-    position: relative;
+.icon-badge{
+    background-color:var(--shade-of-blue);
+    right: 10px;
+    top: -5px;
 }
 
-.text-2{
+.large-badge{
+    width:30px;
+    height:30px;
+    font-size: 24px;
+    right: -10px;
+    top: -10px;
+}
+
+.btn-badge{
+    left: -12px;
+    top: -15px;
+}
+
+.text-pos{
     width: max-content;
     position: relative;
 }
@@ -133,6 +105,18 @@ h1.header:before {
     position: relative;
     background-color:var(--shade-of-blue);
     color:var(--white);
+    opacity: .9;
+}
+
+.btn:hover{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: 1;
 }
 
 .para-icon{
@@ -140,3 +124,6 @@ h1.header:before {
     width:9.5rem;
 }
 
+.toggle-btn-icon{
+    display: none;
+}

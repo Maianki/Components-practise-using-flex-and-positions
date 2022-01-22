@@ -9,33 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="main">
-        <h1 class="header">Badge</h1>
+    <main class="main">
+        <h1 class="header">Badges</h1>
         <div class="badge">
-            <div class="text-badge">
-
-            </div>
-
+           
             <div class="text-badge badge-item">
-                <p class="text-1 pd">Text with a badge <span class="gen-badge">4</span></p>
+                <p class="text-pos pd">Text with a badge <span class="gen-badge">4</span></p>
             </div>
 
             <div class="text-badge-large badge-item">
-                <p class="text-2 pd">Text with large badge <span class="large-badge">4</span></p>
+                <p class="text-pos pd">Text with large badge <span class="large-badge gen-badge">4</span></p>
             </div>
 
             <div class="btn-badge-left badge-item">
-                <p class="btn-para pd">Button with a badge on left <button class="btn">Action<span class="btn-badge">4</span></button></p>
-                
+                <p class="btn-para pd">Button with a badge on left <button class="btn">Action<span class="btn-badge gen-badge">4</span></button></p>
             </div>
 
-            <div class="btn-toggle-badge badge-item"></div>
+            <div class=" badge-item">
+                <p class="btn-para pd">Button toggles badge visibility<button class="btn btn-toggle">Action<span class="btn-badge gen-badge toggle-badge toggle-btn-icon">4</span></button></p>
+            </div>
 
             <div class="icon badge-item">
-                <p class="pd para-icon">Icon with a badge  <i class="fa fa-home" style="font-size:24px"><span class="icon-badge">4</span></i></p> 
+                <p class="pd para-icon">Icon with a badge  <i class="fa fa-home" style="font-size:24px"><span class="icon-badge gen-badge">4</span></i></p> 
             </div>
             
         </div>
-    </div>
+    </main>
+    <script src="./compJS/badge.js"></script>
 </body>
 </html>
