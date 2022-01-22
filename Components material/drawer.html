@@ -9,7 +9,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="main">
+  
+    <nav class="ht drawer bdr">
+      <div class="header">
+        <h2 class="title">Mail</h2>
+        <p class="title-subtext lowercase">email@material.io</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-inbox"></i>
+        <p>Inbox</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-star"></i>
+        <p>Star</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-send"></i>
+        <p>Sent Mail</p>
+      </div>
+      
+      <div class="item section-btm-border">
+        <i class="fa fa-envelope-open"></i>
+        <p >Drafts</p>
+      </div>
+
+      <div class="header">
+        <p class="title-subtext lowercase">Labels</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-bookmark"></i>
+        <p>Family</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-bookmark"></i>
+        <p>Friends</p>
+      </div>
+      
+      <div class="item section-btm-border">
+        <i class="fa fa-bookmark"></i>
+        <p>Work</p>
+      </div>
+
+      <div class="item">
+        <i class="fa fa-gear"></i>
+        <p>Settings</p>
+      </div>
+      
+      <div class="item">
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Help and Feedback</p>
+      </div>
+
+    </nav>
+    <main class="main">
         <h1 class="header">Drawer</h1>
         <div class="drawer">
             <div class="header">
@@ -17,27 +74,30 @@
               <p class="title-subtext">subtext</p>
             </div>
             
-            <div class="item1 item">
+            <div class="item">
               <i class="fa fa-inbox"></i>
               <p>Inbox</p>
             </div>
             
-            <div class="item2 item">
+            <div class="item">
               <i class="fa fa-star"></i>
               <p>Star</p>
             </div>
             
-            <div class="item3 item">
+            <div class="item">
               <i class="fa fa-send"></i>
               <p>Sent Mail</p>
             </div>
             
-            <div class="item4 item">
+            <div class="item">
               <i class="fa fa-envelope-open"></i>
               <p >Drafts</p>
             </div>
+
           </div>
-    </div>
-    
+
+          <button class="btn-demo-dismissible">Dismissible drawer</button>
+      </main>
+    <script src="./compJS/drawer.js"></script>
 </body>
 </html>

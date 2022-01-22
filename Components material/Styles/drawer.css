@@ -1,3 +1,6 @@
+body{
+  display: flex;
+}
 :root{
     --primary-color:rgb(168, 90, 231);
     --white:#fff;
@@ -33,19 +36,19 @@ h1.header:before {
     flex-direction: column;
     background-color: var(--grey);
     align-items: center;
+    flex-grow: 1;
+    transition: margin-left .5s;
 }
-
-
 
 .drawer{
     width:255px;
-    height:290px;
     background:white;
     padding:.5rem 1rem 1rem 1rem;
     box-sizing:border-box;
+    transition : margin-right .5s;
   }
   
-  .title{
+.title{
     margin-bottom:0;
     line-height:.25px;
   }
@@ -71,4 +74,45 @@ h1.header:before {
   
   .item:hover{
     background:#D3D3D3;
+  }
+
+  .lowercase{
+    text-transform: lowercase;
+  }
+
+  .btn-demo-dismissible{
+    border:none;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-color:var(--shade-of-blue);
+    color:var(--white);
+    opacity: .8;
+    margin: 2rem;
+  }
+
+  .btn-demo-dismissible:hover{
+    opacity: 1;
+    box-shadow: 1px 1px var(--white);
+  }
+
+  .dismissible-drawer{
+    display:none;
+  }
+
+  /* .toggle-margin-lft{
+    margin-left:255px;
+  }  */
+  /*TEST CLASSES*/
+  .bdr{
+    border:1px solid var(--black)
+  }
+  .section-btm-border{
+    border-bottom: thin solid #D3D3D3;
+  }
+  
+  .ht{
+    height: 100vh;
+    overflow: auto;
   }
