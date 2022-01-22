@@ -23,7 +23,7 @@ h1.header:before {
 }
 
 .main{
-    margin:3rem 3rem 0 3rem;
+    margin:3rem 1rem 0 1rem;
     padding: 3rem;
     border:1px solid var(--black);
     display: flex;
