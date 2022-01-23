@@ -63,7 +63,8 @@ h1.header:before {
    color:var(--white);
  }
   .btn-demo-leading,
-  .btn-demo-baseline{
+  .btn-demo-baseline,
+  .btn-demo-stacked{
     border:none;
     padding: .5rem 1rem;
     font-size: 20px;
@@ -79,7 +80,8 @@ h1.header:before {
   }
   
   .btn-demo-leading:hover,
-  .btn-demo-baseline:hover{
+  .btn-demo-baseline:hover,
+  .btn-demo-stacked:hover{
     opacity: 1;
     box-shadow: 1px 1px var(--white);
   }
@@ -95,15 +97,30 @@ h1.header:before {
     display: none;
     position: fixed;
     bottom: 10px;
-
   }
 
   .demo-retry{
     margin-left: auto;
   }
 
-  .baseline-snackbar{
+  .center-snackbar{
     left: 50%;
     transform: translate(-50%, 0px);
   }
   
+  .stacked-toast{
+    background:black;
+    color:#EEEADE;
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem 1rem;
+    width:50vw;
+    border-radius: 5px;
+    position: fixed;
+    bottom:10px;
+    display: none;
+  }
+
+  .stacked-item-2{
+    align-self: flex-end;
+  }
