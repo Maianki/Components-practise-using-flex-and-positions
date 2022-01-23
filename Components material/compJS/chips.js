@@ -1,5 +1,4 @@
 const txtInput = document.querySelector(".input-box")
-const closeBtn = document.querySelector(".close-btn")
 const inputChipsDisplay = document.querySelector(".input-chips-display")
 
 txtInput.addEventListener("keyup",(event)=>{
@@ -15,7 +14,3 @@ txtInput.addEventListener("keyup",(event)=>{
      
 })
 
-// closeBtn.addEventListener('click',(e)=>{
-//   console.log(closeBtn)
-//   closeBtn.parentElement.style.display='none'
-// })
