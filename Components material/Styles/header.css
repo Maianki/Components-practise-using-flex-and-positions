@@ -71,3 +71,46 @@ h1.header:before {
      color: var(--white);
  }
 
+
+ /*Prominent Header*/
+
+ .prominent-nav-icons{
+  margin-left:auto;
+  gap:1rem;
+}
+
+
+.prominent-bar{
+  margin-top: 1rem;
+  background:var(--shade-of-blue);
+  width:80%;
+  height:100px;
+  display:flex;
+  flex-direction:column;
+  padding:0 1rem;
+  justify-content:center;
+}
+
+.prominent-heading{
+  margin-left:3rem;
+}
+
+ /*Short always collapsed*/
+
+ .short-bar{
+   margin-top: 1rem;
+   width:80px;
+   border-radius:0 0 30px 0;
+ }
+
+  /*Dense header*/
+  .dense-header{
+    height: 35px;
+    margin-top: 1rem;
+  }
+
+ /*Prominent Dense header*/
+ .prominent-dense{
+  height: 85px;
+  margin-top: 1rem;
+}
