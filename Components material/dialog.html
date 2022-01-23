@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main">
-        <h1 class="header">Dialog</h1>
+        <h1 class="header">Dialogs</h1>
 
             <div class="dialog-container">
                 <h2>Reset settings?</h2>
@@ -17,10 +17,66 @@
 
                 <div class="dialog-btns">
                     <button class="cancel-btn">cancel</button>
-                    <button class="accept-btn">accept</button>
+                    <button class="accept-btn md-left">accept</button>
                 </div>
                 
             </div>
+
+            <!--Confirmation dialog-->
+            <div class="dialog-container confirmation-dialog">
+                <h2>Phone Ringtone</h2>
+
+                <ul class="inputs">
+                    
+                    <li class="ringtone-options">
+                        <input type="radio" id="None" name="ringtone" value="None">
+                        <label class="ringtone-name" for="None">None</label>
+                    </li>
+                        
+                    <li class="ringtone-options">
+                        <input type="radio" id="Callisto" name="ringtone" value="Callisto">
+                        <label class="ringtone-name" for="Callisto">Callisto</label>
+                    </li>
+                    
+                    <li class="ringtone-options">
+                        <input type="radio" id="Ganymede" name="ringtone" value="Ganymede">
+                        <label class="ringtone-name" for="Ganymede">Ganymede</label>
+                    </li>
+
+                    <li class="ringtone-options">
+                        <input type="radio" id="luna" name="ringtone" value="luna">
+                        <label class="ringtone-name" for="luna">Luna</label>
+                    </li>
+                    
+                    <li class="ringtone-options">
+                        <input type="radio" id="Oberon" name="ringtone" value="Oberon">
+                        <label class="ringtone-name" for="Oberon">Oberon</label>
+                    </li>
+                    
+                    <li class="ringtone-options">
+                        <input type="radio" id="Phobos" name="ringtone" value="Phobos">
+                        <label class="ringtone-name" for="Phobos">Phobos</label>
+                    </li>
+                    
+                    <li class="ringtone-options">
+                        <input type="radio" id="dione" name="ringtone" value=dione">
+                        <label class="ringtone-name" for="dione">Dione</label>
+                    </li>
+                   
+                    <li class="ringtone-options">
+                        <input type="radio" id="ambient" name="ringtone" value="ambient">
+                        <label class="ringtone-name" for="ambient">Ambient</label>
+                    </li>
+                    
+                </ul>
+               
+                <div class="dialog-btns">
+                    <button class="cancel-btn">cancel</button>
+                    <button class="accept-btn md-left">ok</button>
+                </div>
+                
+            </div>
+
             <button class="btn-dialog-demo">Demo</button>
       
     </div>
@@ -32,7 +88,7 @@
 
         <div class="dialog-btns">
             <button class="cancel-btn-demo">cancel</button>
-            <button class="accept-btn">accept</button>
+            <button class="accept-btn md-left">accept</button>
         </div>
         
     </div>
